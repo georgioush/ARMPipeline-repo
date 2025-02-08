@@ -22,5 +22,5 @@ steps:
     csmFileLink: 'https://raw.githubusercontent.com/georgioush/ARMPipeline-repo/refs/heads/main/azuredeploy.json'
     overrideParameters: '-projectName akshojiARM'
     deploymentMode: 'Incremental'
-    deploymentName: 'akshojidep'
+    deploymentName: 'akshj'
   displayName: 'Run a one-line script'
