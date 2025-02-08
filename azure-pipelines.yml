@@ -20,7 +20,7 @@ steps:
     resourceGroupName: 'ARMPipeline-rg'
     location: 'East Asia'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/georgioush/ARMPipeline-repo/refs/heads/main/azuredeploy.json'
+    csmFileLink: 'https://raw.githubusercontent.com/georgioush/ARMPipeline-repo/refs/heads/main/azuredeploy.json?token=GHSAT0AAAAAAC6NBW5OPTODMNB3QAXSMUBEZ5HHYWA'
     overrideParameters: '-projectName akshojiARM'
     deploymentMode: 'Incremental'
     deploymentName: 'akshojideploy'
