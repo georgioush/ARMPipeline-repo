@@ -10,7 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
@@ -20,13 +19,8 @@ steps:
     resourceGroupName: 'ARMPipeline-rg'
     location: 'East Asia'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/georgioush/ARMPipeline-repo/refs/heads/main/azuredeploy.json?token=GHSAT0AAAAAAC6NBW5OPTODMNB3QAXSMUBEZ5HHYWA'
+    csmFileLink: 'https://raw.githubusercontent.com/georgioush/ARMPipeline-repo/refs/heads/main/azuredeploy.json'
     overrideParameters: '-projectName akshojiARM'
     deploymentMode: 'Incremental'
     deploymentName: 'akshojideploy'
   displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
