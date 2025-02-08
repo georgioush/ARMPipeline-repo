@@ -28,13 +28,13 @@
             "type": "object",
             "defaultValue": {
                 "Environment": "Dev",
-                "Project": "Tutorial"
+                "Project": "Tutorial2"
             }
         }
     },
     "variables": {
         "storageAccountName": "[uniqueString(resourceGroup().id)]",
-        "webAppName": "[concat(parameters('projectName'), uniqueString(resourceGroup().id))]",
+        "webAppName": "[uniqueString(resourceGroup().id)]",
         "appServicePlanName": "[concat(parameters('projectName'), 'Plan')]"
     },
     "resources": [
